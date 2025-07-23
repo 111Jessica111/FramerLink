@@ -5,7 +5,7 @@ import com.example.framerlink.MainActivity
 import com.example.framerlink.base.BaseActivity
 import com.example.framerlink.constant.PageName
 import com.example.framerlink.module.detail.SearchActivity
-import com.example.framerlink.module.home.LoginActivity
+import com.example.framerlink.module.detail.LoginActivity
 
 object Router {
     fun BaseActivity<*>.navigation(
