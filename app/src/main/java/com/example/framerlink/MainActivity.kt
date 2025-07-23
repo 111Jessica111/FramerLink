@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
+import androidx.cardview.widget.CardView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.framerlink.base.BaseActivity
 import com.example.framerlink.constant.PageName
@@ -18,6 +19,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     private lateinit var btnThird: ImageButton
     private lateinit var btnForth: ImageButton
     private lateinit var pagerAdapter: PagerAdapter
+    private lateinit var btnSearch: CardView
 
     override val inflater: (LayoutInflater) -> ActivityMainBinding
         get() = ActivityMainBinding::inflate
@@ -29,7 +31,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         initViews()
         setUpViewPagers()
         setUpBottomNavigation()
+        setUpJump()
     }
+
+
 
     private fun initViews() {
         viewPager = findViewById(R.id.viewPager)
@@ -37,6 +42,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         btnSecond = findViewById(R.id.btn_second)
         btnThird = findViewById(R.id.btn_third)
         btnForth = findViewById(R.id.btn_forth)
+        btnSearch = findViewById(R.id.btn_search)
     }
 
     private fun setUpViewPagers() {
@@ -75,6 +81,12 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         btnSecond.setImageResource(R.drawable.icon_2)
         btnThird.setImageResource(R.drawable.icon_3)
         btnForth.setImageResource(R.drawable.icon_4_)
+    }
+
+    private fun setUpJump() {
+        btnSearch.setOnClickListener {
+
+        }
     }
 
     override fun getPageName(): PageName {
