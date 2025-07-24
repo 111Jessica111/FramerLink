@@ -408,7 +408,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="拍照搜索"
+                    android:text="AI诊断"
                     android:layout_marginTop="10dp"
                     android:textColor="@color/purpor"/>
 

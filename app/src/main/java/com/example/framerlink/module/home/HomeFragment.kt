@@ -12,9 +12,17 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override val inflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentHomeBinding
         get() = FragmentHomeBinding::inflate
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        setFunctionClick(viewBinding)
     }
+
+    private fun setFunctionClick(binding: FragmentHomeBinding) {
+
+    }
+
 
     override fun getPageName(): PageName {
         return PageName.MAIN

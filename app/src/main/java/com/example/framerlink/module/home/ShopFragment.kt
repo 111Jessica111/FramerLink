@@ -6,20 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.framerlink.R
+import com.example.framerlink.base.BaseFragment
+import com.example.framerlink.constant.PageName
+import com.example.framerlink.databinding.FragmentShopBinding
 
-class ShopFragment : Fragment() {
+class ShopFragment : BaseFragment<FragmentShopBinding>() {
+    override val inflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentShopBinding
+        get() = FragmentShopBinding::inflate
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_shop, container, false)
-        return view
+    override fun getPageName(): PageName {
+        return PageName.MAIN
     }
 }

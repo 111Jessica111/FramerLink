@@ -12,8 +12,8 @@ class PagerAdapter(fragmentActivity: FragmentActivity): FragmentStateAdapter(fra
     override fun createFragment(position: Int): Fragment {
         return when(position){
             0 -> HomeFragment()
-            1 -> ShopFragment()
-            2 -> AiFragment()
+            1 -> AiFragment()
+            2 -> ShopFragment()
             3 -> MineFragment()
             else -> HomeFragment()
         }

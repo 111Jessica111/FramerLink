@@ -44,6 +44,18 @@ object Router {
             PageName.REGULATE -> {
 
             }
+            PageName.NEWS -> {
+
+            }
+            PageName.MARKET -> {
+
+            }
+            PageName.PRICE -> {
+
+            }
+            PageName.WHEATHER -> {
+
+            }
         }
     }
 }

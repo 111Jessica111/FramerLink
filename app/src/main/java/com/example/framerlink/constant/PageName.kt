@@ -9,4 +9,8 @@ enum class PageName {
     PHOTO,
     CONTROL,
     REGULATE,
+    NEWS,
+    MARKET,
+    PRICE,
+    WHEATHER,
 }

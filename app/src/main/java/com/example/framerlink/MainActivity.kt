@@ -50,16 +50,16 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         resetAllIcons()
         when (position) {
             0 -> viewBinding.btnFirst.setImageResource(R.drawable.click_icon_1)
-            1 -> viewBinding.btnSecond.setImageResource(R.drawable.click_icon_2)
-            2 -> viewBinding.btnThird.setImageResource(R.drawable.click_icon_3)
+            1 -> viewBinding.btnSecond.setImageResource(R.drawable.click_icon_3)
+            2 -> viewBinding.btnThird.setImageResource(R.drawable.click_icon_2)
             3 -> viewBinding.btnForth.setImageResource(R.drawable.click_icon_4)
         }
     }
 
     private fun resetAllIcons() {
         viewBinding.btnFirst.setImageResource(R.drawable.icon_1)
-        viewBinding.btnSecond.setImageResource(R.drawable.icon_2)
-        viewBinding.btnThird.setImageResource(R.drawable.icon_3)
+        viewBinding.btnSecond.setImageResource(R.drawable.icon_3)
+        viewBinding.btnThird.setImageResource(R.drawable.icon_2)
         viewBinding.btnForth.setImageResource(R.drawable.icon_4_)
     }
 
