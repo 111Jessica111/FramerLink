@@ -29,6 +29,21 @@ object Router {
                 intentAction(intent)
                 startActivity(intent)
             }
+            PageName.CONSULTATION -> {
+
+            }
+            PageName.ORDER -> {
+
+            }
+            PageName.PHOTO -> {
+
+            }
+            PageName.CONTROL -> {
+
+            }
+            PageName.REGULATE -> {
+
+            }
         }
     }
 }

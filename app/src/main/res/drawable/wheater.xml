@@ -13,8 +13,8 @@
           android:startY="0"
           android:endX="0"
           android:endY="720">
-        <item android:offset="0" android:color="#FF90f67e"/>  <!-- 顶部：鲜绿 -->
-        <item android:offset="1" android:color="#FFf2faf1"/>  <!-- 底部：浅薄荷绿 -->
+        <item android:offset="0" android:color="#FF57B77D"/>
+        <item android:offset="1" android:color="#FF68D665"/>
       </gradient>
     </aapt:attr>
   </path>
