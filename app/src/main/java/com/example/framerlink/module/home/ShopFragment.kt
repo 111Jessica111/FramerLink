@@ -51,8 +51,24 @@ class ShopFragment : BaseFragment<FragmentShopBinding>() {
                 this@ShopFragment,
                 R.layout.shop_list,
                 viewModel.shopList
-            ) {holder, product ->
-
+            ) { holder, product ->
+                // 名称
+                holder.seedName.text = product.name
+                // 描述
+                holder.seedDes.text = product.description
+                // 价格
+                holder.seedPrice.text = product.price?.toInt()?.toString() ?: "--"
+                // 评分
+                val rating = product.rating ?: 0.0
+                val ratingBar = holder.itemView.findViewById<android.widget.RatingBar>(com.example.framerlink.R.id.ratingBars)
+                ratingBar.rating = rating.toFloat()
+                holder.seedStar.text = rating.toString()
+                // 图片（本地资源 plant_1）
+                holder.seedPhoto.setImageResource(com.example.framerlink.R.mipmap.plant_1)
+                // 加入按钮点击事件（可自定义）
+                holder.seedAdd.setOnClickListener {
+                    // TODO: 加入购物车逻辑
+                }
             }
         }
 

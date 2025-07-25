@@ -3,6 +3,7 @@ package com.example.framerlink.module.adapter
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.RatingBar
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -26,7 +27,7 @@ class ShopItemViewHolder(view: View): RecyclerView.ViewHolder(view){
     val seedPrice: TextView = view.findViewById(R.id.seed_price)
     val seedDes: TextView = view.findViewById(R.id.seed_des)
     val seedAdd: CardView = view.findViewById(R.id.btn_add)
-    val seedRating: TextView = view.findViewById(R.id.ratingBars)
+    val seedRating: RatingBar = view.findViewById(R.id.ratingBars)
     val seedStar: TextView = view.findViewById(R.id.seed_star)
 
     companion object {
