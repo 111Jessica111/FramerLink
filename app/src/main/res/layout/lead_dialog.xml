@@ -44,7 +44,7 @@
         android:background="@android:color/transparent"
         android:layout_below="@+id/show"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="60dp"/>
 
 
 </RelativeLayout>
