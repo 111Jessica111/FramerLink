@@ -5,5 +5,12 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="ShapeAppearanceOverlay.MyApp.CornerSize">
+        <item name="cornerFamily">rounded</item> <!-- 设置圆角类型为圆角 -->
+        <item name="cornerSize">8dp</item> <!-- 设置圆角大小为 8dp -->
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp" parent="ShapeAppearanceOverlay.MyApp.CornerSize" />
+
     <style name="Theme.FramerLink" parent="Base.Theme.FramerLink" />
 </resources>

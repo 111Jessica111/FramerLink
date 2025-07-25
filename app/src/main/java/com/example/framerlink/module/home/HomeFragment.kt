@@ -30,6 +30,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         }
 
         setFunctionClick(viewBinding)
+
     }
 
     private fun setLeadDialog() {
