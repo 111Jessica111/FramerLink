@@ -13,4 +13,5 @@ enum class PageName {
     MARKET,
     PRICE,
     WHEATHER,
+    SHOPDETAIL,
 }

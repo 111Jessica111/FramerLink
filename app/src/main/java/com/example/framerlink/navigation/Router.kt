@@ -56,6 +56,9 @@ object Router {
             PageName.WHEATHER -> {
 
             }
+            PageName.SHOPDETAIL -> {
+
+            }
         }
     }
 }
