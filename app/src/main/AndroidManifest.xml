@@ -14,7 +14,7 @@
         android:theme="@style/Theme.FramerLink"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".module.detail.ShopDetailActivity"
             android:exported="false" />
         <activity
             android:name=".module.detail.ConsultationActivity"
@@ -26,7 +26,7 @@
             android:name=".module.detail.SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".module.detail.ShopDetailActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

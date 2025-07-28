@@ -6,6 +6,7 @@ import com.example.framerlink.base.BaseActivity
 import com.example.framerlink.constant.PageName
 import com.example.framerlink.module.detail.SearchActivity
 import com.example.framerlink.module.detail.LoginActivity
+import com.example.framerlink.module.detail.ShopDetailActivity
 
 object Router {
     fun BaseActivity<*>.navigation(
@@ -57,7 +58,9 @@ object Router {
 
             }
             PageName.SHOPDETAIL -> {
-
+                val intent = Intent(this, ShopDetailActivity::class.java)
+                intentAction(intent)
+                startActivity(intent)
             }
         }
     }

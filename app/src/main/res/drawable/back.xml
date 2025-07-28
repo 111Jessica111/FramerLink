@@ -8,11 +8,11 @@
         android:pathData="M0,0h22.694v21h-22.694z"/>
     <path
         android:pathData="M0,0h22.694v21h-22.694z"
-        android:fillColor="#FF000000"
+        android:fillColor="#FFFFFF"
         android:fillAlpha="0"/>
     <path
         android:pathData="M15.129,18.375C14.846,18.375 14.656,18.288 14.467,18.112L6.903,11.113C6.714,10.938 6.619,10.675 6.619,10.5C6.619,10.238 6.714,10.063 6.903,9.887L14.467,2.888C14.846,2.537 15.413,2.537 15.791,2.888C16.169,3.237 16.169,3.763 15.791,4.113L8.889,10.5L15.791,16.888C16.169,17.237 16.169,17.763 15.791,18.112C15.602,18.288 15.413,18.375 15.129,18.375Z"
-        android:fillColor="#FF000000"
+        android:fillColor="#FFFFFF"
         android:fillType="evenOdd"/>
   </group>
 </vector>

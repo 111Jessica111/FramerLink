@@ -16,7 +16,7 @@ class ShopFragmentViewModel: BaseViewModel() {
         _shopList.value = listOf(
             Product(
                 id = "1",
-                name = "小麦",
+                name = "优质强劲冬小麦种子高产山东小麦济麦22小麦种子",
                 description = "优质小麦种子，适合多种气候。",
                 tags = "粮食,高产",
                 rating = 4.5,

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="育成单位：山东省农业科学院作物研究所  审定编号：国审麦2006018、鲁农审2006050  亲本组合：935024/935106  品种类型：半冬性、中晚熟、优质强筋小麦育成单位：山东省农业科学院作物研究所  审定编号：国审麦2006018、鲁农审2006050  亲本组合：935024/935106  品种类型：半冬性、中晚熟、优质强筋小麦育成单位：山东省农业科学院作物研究所  审定编号：国审麦2006018、鲁农审2006050  亲本组合：935024/935106  品种类型：半冬性、中晚熟、优质强筋小麦"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

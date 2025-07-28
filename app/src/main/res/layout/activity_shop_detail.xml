@@ -9,31 +9,40 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        android:layout_marginTop="40dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:background="@color/green_4">
 
-        <ImageButton
-            android:id="@+id/btn_back"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/back"
-            android:layout_gravity="center"
-            android:background="@android:color/transparent"
-            android:padding="10dp"/>
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="详情"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="8dp"
-            android:layout_marginBottom="2dp"/>
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:padding="10dp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详情"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"/>
+
+        </LinearLayout>
     </LinearLayout>
+
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -205,6 +214,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/select_func1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -226,6 +236,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/select_func2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -247,6 +258,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/select_func3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -268,6 +280,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/select_func4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -290,25 +303,15 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/select_1_content1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="育成单位：山东省农业科学院作物研究所  审定编号：国审麦2006018、鲁农审2006050  亲本组合：935024/935106  品种类型：半冬性、中晚熟、优质强筋小麦"/>
-
-                    <TextView
-                        android:id="@+id/select_1_content2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="育成单位：山东省农业科学院作物研究所  审定编号：国审麦2006018、鲁农审2006050  亲本组合：935024/935106  品种类型：半冬性、中晚熟、优质强筋小麦"/>
-                </LinearLayout>
 
             </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/content_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
             <TextView
                 android:layout_width="match_parent"

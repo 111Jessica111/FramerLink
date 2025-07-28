@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.framerlink.R
+import com.example.framerlink.base.BaseActivity
 import com.example.framerlink.base.BaseFragment
 import com.example.framerlink.base.list.BaseAdapter
 import com.example.framerlink.bean.Product
@@ -14,6 +15,7 @@ import com.example.framerlink.constant.PageName
 import com.example.framerlink.databinding.FragmentShopBinding
 import com.example.framerlink.module.adapter.ShopHeaderViewHolder
 import com.example.framerlink.module.adapter.ShopItemViewHolder
+import com.example.framerlink.navigation.Router.navigation
 
 class ShopFragment : BaseFragment<FragmentShopBinding>() {
 
@@ -58,6 +60,21 @@ class ShopFragment : BaseFragment<FragmentShopBinding>() {
                 holder.seedRating.rating = (product.rating ?: 0.0).toFloat()
                 holder.seedStar.text = (product.rating ?: 0.0).toString()
                 holder.seedPhoto.setImageResource(com.example.framerlink.R.mipmap.plant_1)
+                
+                //商品点击事件
+                holder.itemView.setOnClickListener {
+                    (requireActivity() as?  BaseActivity<*>)?.let { activity ->
+                        activity.navigation(PageName.SHOPDETAIL) { intent ->
+                            intent.putExtra("product_id", product.id)
+                            intent.putExtra("product_name", product.name)
+                            intent.putExtra("product_description", product.description)
+                            intent.putExtra("product_price", product.price)
+                            intent.putExtra("product_rating", product.rating)
+                            intent.putExtra("product_cover_url", product.coverUrl)
+                        }
+                    }
+                }
+                
                 holder.seedAdd.setOnClickListener {
                     // TODO: 加入购物车逻辑
                 }
